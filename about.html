@@ -7,91 +7,119 @@
     <title>DOE Data Curation Group</title>
     <!-- Include Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="/styles.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #dceef7;">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-md" style="background-color: #dceef7;">
         <div class="container-fluid">
-            <img src="/assets/logo.png" height="75px"/>
-            <a class="navbar-brand" style="color: black;" href="#">DOE Curation Group</a>
+            <div class="title-banner mx-auto">
+                <h1 style="color: black;">Department of Energy Data Curation Working Group</h1>
+            </div>
+            <a href="/index.html"><img src="/assets/logo.png" height="75px" />
+            </a>
+        </div>
+
+    </nav>
+
+    <!-- Nav links -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm png">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/about.html" class="nav-link ">Group background and objectives</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <!-- Main layout -->
-    <div class="container-fluid">
-        <div class="row">
-            <!-- Sidebar -->
-            <nav id="sidebar" class="d-sm-none d-md-block col-md-2 bg-light">
-                <div class="pt-3">
-                    <ul class="nav flex-column">
-                        <li class="nav-item"><a href="/index.html" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="/about.html" class="nav-link">About the group</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <!-- Content Area -->
-            <main class="col-md-10 p-5" style="height: 100vh; overflow-y: scroll;">
-                <div data-bs-offset="0">
-                    <h2>Background</h2>
-                    <p>Department of Energy (DOE) National Laboratory Data Curation Working Group (DCWG) first convened
-                        in the spring of 2023.
-                        This group was proposed at the 2022 DOE Data Days in response to the challenges posed by the
-                        exponential growth in data generation across the diverse landscape of United States National
-                        Laboratory complex.
-                        The surge in data volume, the velocity of its production, and the grand diversity of data types
-                        have prompted the need for a dedicated consortium to tackle the complex data-related issues
-                        faced by these laboratories. Cognizant of these challenges, and the need for a systematic
-                        approach to tackling them, led a group of curators, librarians, information scientists,
-                        researchers, and developers representing the different laboratories to form a working group to
-                        identify emerging issues and share expertise in data curation.</p>
-                    <h2>Seven Objectives of the DCWG</h2>
-                    <li> Work with DOE OSTI (Office of Scientific and Technical Information) to come up with a more mature data sharing plan and discovery layer</li>
-                    <li> Research and implement metadata and ontologies that improve discovery and interoperability at the general and specialist/disciplinary level</li>
-                    <li> Develop a "Data Curator Toolkit" to help curators asses datasets when they are too large to curate manually</li>
-                    <li> Develop best practices for Machine Actionable Data Management Plans that reflect the needs of the laboratories</li>
-                    <li> Develop best practices for liaison work and training</li>
-                    <li> In collaboration with our partners at Data Curation Network (DCN) create documentation and primers for curators</li>
-                    <li> Machine Learning - Create scripts and/or a proof-of-concept short paper that demonstrates how accessing various repository metadata can allow for semantic search capabilities
-                    <h2>Members</h2>
-                    • Izzy Mller
-                    • Paden Rumsey
-                    • Ron Stewart
-                    • Hannah Hamalainen
-                    • Joan Damerow
-                    • Amanda Price
-                    • Rebecca Rodd
-                    • Paige Morkner
-                    • Chad Rowan
-                    • Lauren Spath Luhring
-                    • Meghan Berry
-                    • Hannah Collier
-                    • Anna Galyon
-                    • Olga Kuchar
-                    • Alex May
-                    • Janine Pino
-                    • Tatiyann Singleton
-                    • Natalie Barnett
-                    • Drew Huitt
-                    • Miriam Blake
-                    • Aaron Brown
-                    • Michael Hofmockel
-                    • Trevor Lemos
-                    • Jennifer Mendez
-                    • Carrie Minerich
-                    • Juliane Schneider
-                    • Shannon Sheridan
-                    • Ian Smith
-                    • Rose Borden
-                    • Karen Holt
-                    </ul>
-
-                </div>
-            </main>
-        </div>
+    <!-- Content Area -->
+    <main class="p-5">
+        <h3>Background</h3>
+        <p>Department of Energy (DOE) National Laboratory Data Curation Working Group (DCWG) first convened
+            in the spring of 2023.
+            This group was proposed at the 2022 DOE Data Days in response to the challenges posed by the
+            exponential growth in data generation across the diverse landscape of United States National
+            Laboratory complex.
+            The surge in data volume, the velocity of its production, and the grand diversity of data types
+            have prompted the need for a dedicated consortium to tackle the complex data-related issues
+            faced by these laboratories. Cognizant of these challenges, and the need for a systematic
+            approach to tackling them, led a group of curators, librarians, information scientists,
+            researchers, and developers representing the different laboratories to form a working group to
+            identify emerging issues and share expertise in data curation.</p>
+        <h3 id="about" class="mt-4">Our Goal</h3>
+        <p>The goal of the DOE Data Curation Working Group (DOE DCWG) is to address the full lifecycle of
+            data--from data management planning
+            and ensuring early liaison engagement with scientists to establishing data curation standards and tools,
+            data literacy materials, and repository best practices as well as citation-level metadata harvesting
+            protocols as informed by the 
+            <a href="https://www.go-fair.org/fair-principles/"> FAIR data principles</a>. 
+            As a strategic, cross-functional decision-making entity, the DCWG identified 
+            <a href="#objectives">7 objectives</a> that members work asynchronously on
+            throughout the fiscal year.
+            This allows the group to focus on implementing data curation best practices that are adapted to the DOE
+            National Laboratories environment. By sharing this model, we hope to share our challenges and successes
+            and receive feedback from the larger data curation community on the efforts of the working group.</p>
+        <h3 id="objectives" class="mt-4">Seven Objectives of the DCWG</h2>
+        <li> Work with DOE OSTI (Office of Scientific and Technical Information) to come up with a more mature
+            data sharing plan and discovery layer</li>
+        <li> Research and implement metadata and ontologies that improve discovery and interoperability at the
+            general and specialist/disciplinary level</li>
+        <li> Develop a "Data Curator Toolkit" to help curators asses datasets when they are too large to curate
+            manually</li>
+        <li> Develop best practices for Machine Actionable Data Management Plans that reflect the needs of the
+            laboratories</li>
+        <li> Develop best practices for liaison work and training</li>
+        <li> In collaboration with our partners at Data Curation Network (DCN) create documentation and primers
+            for curators</li>
+        <li> Machine Learning - Create scripts and/or a proof-of-concept short paper that demonstrates how
+            accessing various repository metadata can allow for semantic search capabilities</li>
+        <h3 class="mt-4">Members</h3>
+        Izzy Mller
+        • Paden Rumsey
+        • Ron Stewart
+        • Hannah Hamalainen
+        • Joan Damerow
+        • Amanda Price
+        • Rebecca Rodd
+        • Paige Morkner
+        • Chad Rowan
+        • Lauren Spath Luhring
+        • Meghan Berry
+        • Hannah Collier
+        • Anna Galyon
+        • Olga Kuchar
+        • Alex May
+        • Janine Pino
+        • Tatiyann Singleton
+        • Natalie Barnett
+        • Drew Huitt
+        • Miriam Blake
+        • Aaron Brown
+        • Michael Hofmockel
+        • Trevor Lemos
+        • Jennifer Mendez
+        • Carrie Minerich
+        • Juliane Schneider
+        • Shannon Sheridan
+        • Ian Smith
+        • Rose Borden
+        • Karen Holt
+    </main>
+    <!-- Footer Banner -->
+    <div class="footer-banner shadow-lg">
+        <span style="color: black;">© 2023 Department of Energy Data Curation Working Group</span>
     </div>
-
     <!-- Include Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

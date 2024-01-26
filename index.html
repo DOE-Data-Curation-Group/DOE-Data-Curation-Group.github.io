@@ -7,51 +7,63 @@
     <title>DOE Data Curation Group</title>
     <!-- Include Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="/styles.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #dceef7;">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-md" style="background-color: #dceef7;">
         <div class="container-fluid">
-            <img src="/assets/logo.png" height="75px"/>
-            <a class="navbar-brand" style="color: black;" href="#">DOE Curation Group</a>
+            <div class="title-banner mx-auto">
+                <h1 style="color: black;">Department of Energy Data Curation Working Group</h1>
+            </div>
+            <a href="/index.html"><img src="/assets/logo.png" height="75px" />
+            </a>
         </div>
+
     </nav>
 
-    <!-- Main layout -->
-    <div class="container-fluid">
-        <div class="row">
-            <!-- Sidebar -->
-            <nav id="sidebar" class="d-sm-none d-md-block col-md-2 bg-light">
-                <div class="pt-3">
-                    <ul class="nav flex-column">
-                        <li class="nav-item"><a href="/index.html" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="/about.html" class="nav-link">About the group</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <!-- Content Area -->
-            <main class="col-md-10 p-5" style="height: 100vh; overflow-y: scroll;">
-                <div data-bs-offset="0">
-                    <h2 id="about">Goals of the group</h2>
-                    The goal of the Working Group is to address the full lifecycle of data--from data management planning and ensuring early liaison engagement with scientists to establishing data curation standards and tools, data literacy materials, and repository best practices as well as citation-level metadata harvesting protocols as informed by the FAIR data principles.  As a strategic, cross-functional decision-making entity, the DCWG identified 7 objectives that members work asynchronously on throughout the fiscal year. This allows the group to focus on implementing data curation best practices that are adapted to the DOE National Laboratories environment. By sharing this model, we hope to share our challenges and successes and receive feedback from the larger data curation community on the efforts of the working group.
-                    <h3>Outputs</h3>
-                    To access copies of publications, primers, and liaison material, visit the <a href="https://osf.io/4kgjm/">DCWG OSF page</a>.
-                    <h3>Interested in participating?</h3>
-                    <h4> Contact Participating Laboratories</h4>
-                    <ul>
-                        <li>Pacific Northwest National Laboratory</li>
-                        <li>Oak Ridge National Laboratory</li>
-                        <li>Lawrence Livermore National Laboratory</li>
-                        <li>DOE Office of Scientific and Technical Information</li>   
-                    </ul>
-                       
-                </div>
-            </main>
+    <!-- Nav links -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm png">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/about.html" class="nav-link ">Group background and objectives</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
+    <!-- Content Area -->
+    <main class="p-5">
+        <h1 class="text-center"><em>Addressing the full lifecycle of data across the DOE National Laboratories
+                complex.</em></h1>
+        <h3 class="mt-4">Outputs</h3>
+        <p>To access copies of publications, primers, and liaison material, visit the <a
+                href="https://osf.io/4kgjm/">DCWG
+                OSF page</a>.</p>
+        <h3 class="mt-4">Interested in participating?</h3>
+        <h4> Contact TBD </h4>
+        <h3 class="mt-4">Participating Laboratories</h3>
+        <ul>
+            <li>Pacific Northwest National Laboratory</li>
+            <li>Oak Ridge National Laboratory</li>
+            <li>Lawrence Livermore National Laboratory</li>
+            <li>DOE Office of Scientific and Technical Information</li>
+        </ul>
+    </main>
+    <!-- Footer Banner -->
+    <div class="footer-banner shadow-lg">
+        <span style="color: black;">© 2023 Department of Energy Data Curation Working Group</span>
     </div>
-
     <!-- Include Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
