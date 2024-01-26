@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Sidebar Navigation Example</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <img src="/assets/logo.png" height="50px"/>
+            <a class="navbar-brand" href="#">DOE Curation Group</a>
+        </div>
+    </nav>
+
+    <!-- Main layout -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav id="sidebar" class="d-sm-none d-md-block col-md-2 bg-light">
+                <div class="pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a href="/index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="/about.html" class="nav-link">About the group</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Content Area -->
+            <main class="col-md-10 p-5" style="height: 100vh; overflow-y: scroll;">
+                <div data-bs-offset="0">
+                    <h2 id="about">Goals of the group</h2>
+                    The goal of the Working Group is to address the full lifecycle of data--from data management planning and ensuring early liaison engagement with scientists to establishing data curation standards and tools, data literacy materials, and repository best practices as well as citation-level metadata harvesting protocols as informed by the FAIR data principles.  As a strategic, cross-functional decision-making entity, the DCWG identified 7 objectives that members work asynchronously on throughout the fiscal year. This allows the group to focus on implementing data curation best practices that are adapted to the DOE National Laboratories environment. By sharing this model, we hope to share our challenges and successes and receive feedback from the larger data curation community on the efforts of the working group.
+                    <h3>Outputs</h3>
+                    To access copies of publications, primers, and liaison material, visit the <a href="https://osf.io/4kgjm/">DCWG OSF page</a>.
+                    <h3>Interested in participating?</h3>
+                    <h4> Contact Participating Laboratories</h4>
+                    <ul>
+                        <li>Pacific Northwest National Laboratory</li>
+                        <li>Oak Ridge National Laboratory</li>
+                        <li>Lawrence Livermore National Laboratory</li>
+                        <li>DOE Office of Scientific and Technical Information</li>   
+                    </ul>
+                       
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

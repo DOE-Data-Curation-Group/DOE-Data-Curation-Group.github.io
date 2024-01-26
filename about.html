@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Sidebar Navigation Example</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <img src="/assets/logo.png" height="50px"/>
+            <a class="navbar-brand" href="#">DOE Curation Group</a>
+        </div>
+    </nav>
+
+    <!-- Main layout -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav id="sidebar" class="d-sm-none d-md-block col-md-2 bg-light">
+                <div class="pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a href="/index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="/about.html" class="nav-link">About the group</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Content Area -->
+            <main class="col-md-10 p-5" style="height: 100vh; overflow-y: scroll;">
+                <div data-bs-offset="0">
+                    <h2>Background</h2>
+                    <p>Department of Energy (DOE) National Laboratory Data Curation Working Group (DCWG) first convened
+                        in the spring of 2023.
+                        This group was proposed at the 2022 DOE Data Days in response to the challenges posed by the
+                        exponential growth in data generation across the diverse landscape of United States National
+                        Laboratory complex.
+                        The surge in data volume, the velocity of its production, and the grand diversity of data types
+                        have prompted the need for a dedicated consortium to tackle the complex data-related issues
+                        faced by these laboratories. Cognizant of these challenges, and the need for a systematic
+                        approach to tackling them, led a group of curators, librarians, information scientists,
+                        researchers, and developers representing the different laboratories to form a working group to
+                        identify emerging issues and share expertise in data curation.</p>
+                    <h2>Seven Objectives of the DCWG</h2>
+                    <li> Work with DOE OSTI (Office of Scientific and Technical Information) to come up with a more</li>
+                    mature data sharing plan and discovery layer</li>
+                    <li> Research and implement metadata and ontologies that improve discovery and interoperability at the general and specialist/disciplinary level</li>
+                    <li> Develop a "Data Curator Toolkit" to help curators asses datasets when they are too large to curate manually</li>
+                    <li> Develop best practices for Machine Actionable Data Management Plans that reflect the needs of the laboratories</li>
+                    <li> Develop best practices for liaison work and training</li>
+                    <li> In collaboration with our partners at Data Curation Network (DCN) create documentation and primers for curators</li>
+                    <li> Machine Learning - Create scripts and/or a proof-of-concept short paper that demonstrates how
+                    </li>
+                    accessing various repository metadata can allow for semantic search capabilities
+                    <h2>Members</h2>
+                    • Izzy Mller
+                    • Paden Rumsey
+                    • Ron Stewart
+                    • Hannah Hamalainen
+                    • Joan Damerow
+                    • Amanda Price
+                    • Rebecca Rodd
+                    • Paige Morkner
+                    • Chad Rowan
+                    • Lauren Spath Luhring
+                    • Meghan Berry
+                    • Hannah Collier
+                    • Anna Galyon
+                    • Olga Kuchar
+                    • Alex May
+                    • Janine Pino
+                    • Tatiyann Singleton
+                    • Natalie Barnett
+                    • Drew Huitt
+                    • Miriam Blake
+                    • Aaron Brown
+                    • Michael Hofmockel
+                    • Trevor Lemos
+                    • Jennifer Mendez
+                    • Carrie Minerich
+                    • Juliane Schneider
+                    • Shannon Sheridan
+                    • Ian Smith
+                    • Rose Borden
+                    • Karen Holt
+                    </ul>
+
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
